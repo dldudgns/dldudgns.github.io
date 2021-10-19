@@ -79,8 +79,9 @@ h3{
 
 #centered{
     display: block;
-    width:50%;
-    margin-left:25%;
+    width:30%;
+    margin-left:35%;
     padding-top:100px;
-    margin-top:-15%;
+    padding-bottom:50px;
+    margin-top:-35%;
 }
