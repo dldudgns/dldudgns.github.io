@@ -2,6 +2,16 @@
    
 }
 
+#test{
+    font-size:xx-large;
+    padding-top:4000px;
+}
+.blue{
+    font-size:small;
+    padding-top:0;
+    color:blue;
+}
+
 #topNavBar #logo {
     font-size: 35px;
     font-weight: bold;

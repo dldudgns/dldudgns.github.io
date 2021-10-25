@@ -1,13 +1,9 @@
-document.body.onscroll = function() {scrollFunction()};
+document.body.addEventListener("scroll", scrollevent());
 
-function scrollFunction() {
-    if (document.body.scrollTop >800||document.documentElement.scrollTop>80){
-        document.getElementsByClassName("right-panel").style.padding= '300px 20px';
-        document.getElementById("topNavBar").style.fontSize = "55px";
-        
-    } else {
-        document.getElementById("contents").style.padding = "80px";
-        document.getElementById("titles").style.fontSize = "35px";
+function scrollevent(){
+    if (document.body.scollTop > 50||document.documentElement.scrollTop>50){
+        document.getElementById("test").className = "blue";
     }
+    
+
 }
-window.addEventListener("scroll",scrollFunction);

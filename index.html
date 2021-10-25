@@ -3,6 +3,7 @@
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -55,7 +56,7 @@
 </div>
 
 <!--body-->
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" onscroll="scrollevent()">
     <!--main side-->
     <div class="row">
         
@@ -128,7 +129,11 @@
                     </div>
                 </div>
             </div>
-            
+            <div onscroll="scrollevent()">
+                <p>
+                    TEST
+                </p>
+            </div>
 
             <!--others-->
             <div class="white-container" >    
