@@ -10,6 +10,37 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+<script src="main.js"></script>
+
+<script>
+    function scrollevent(){
+        if (document.documentElement.scrollTop>500 || document.body.scrollTop>500){
+            document.getElementById("titles").style.transform = "scaleY(1)";
+        }
+        if (document.documentElement.scrollTop>100 || document.body.scrollTop>100){
+            document.getElementById("topNavBar").style.padding = "0 0 0 0";
+            document.getElementById("logoName").style.fontSize="300%";
+            document.getElementById("logo").style.fontSize="150%";
+            
+            }else {
+            document.getElementById("topNavBar").style.padding = "250px 100px 250px 100px";
+            document.getElementById("logoName").style.fontSize="750%";
+            document.getElementById("logo").style.fontSize="200%";
+            
+            // confirm("");
+        }
+        
+        
+       
+    }
+ </script>
+
+
+
+
+
+
+
 <!--logos-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,14 +50,14 @@
 </head>
 
 <!--nav bar-->
-<div id="topNavBar">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
+<div>
+<nav class="navbar navbar-inverse navbar-fixed-top" id="topNavBar">
+    <div class="container-fluid" >
         <div class="navbar-header">
-            <a class="navbar-brand" href="dldudgns.github.io" > <!--id="logo"-->
+            <a class="navbar-brand" href="dldudgns.github.io" id="logoName">
                 Eric Lee</a>
         </div>
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav" id="logo">
             <li>
                 <a href="#Education">Education</a>
             </li>
@@ -47,7 +78,7 @@
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/erle/">
-                    <i class="fa fa-linkedin-square" style="color:#007bb5; font-size:20px"></i>
+                    <i class="fa fa-linkedin-square" style="color:#007bb5;"></i>
                 </a>
             </li>
         </ul>
@@ -56,14 +87,47 @@
 </div>
 
 <!--body-->
-<body data-spy="scroll" data-target=".navbar" onscroll="scrollevent()">
+<body data-spy="scroll" data-target=".navbar" onscroll = "scrollevent()">
     <!--main side-->
     <div class="row">
         
         <div class="col-sm-8" >
-    
-            <!--Education-->
-            <div id="Education" class="grey-container">    
+            <!--page-->
+            <div data-spy="affix">
+                <!--title row-->
+                <div class="grey-container" >    
+                    <h1 class="jumbotron" id="titles" >  
+                        Something 
+                        <span class="glyphicon glyphicon-education" style="text-align:right"></span>
+                    </h1>  
+                </div>
+                <!--description row-->
+                <div class="white-container" >  
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div id="subtitles">
+                                <h3 class="well well-lg" >
+                                    University Of Waterloo
+                                </h3>  
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="pics/uwaterloo_logo.png" alt="test" id="uwaterlooLogo" >
+                        </div>
+                    </div>
+                    <div class="container-fluid" id="contents">
+                        <p>Example sentence</p>
+                    </div>
+            </div>
+        </div>
+            
+            
+
+
+
+            
+            <!-- Education 
+            <div id="Education" class="grey-container" >    
                 <h1 class="jumbotron" id="titles" >  
                     Education 
                     <span class="glyphicon glyphicon-education" style="text-align:right"></span>
@@ -87,7 +151,7 @@
                 
             
             </div>
-            <!--Work Experience-->
+            Work Experience
             
             <div  id="Work" class="white-container" >    
                 <h1 class="jumbotron" id="titles" >
@@ -109,7 +173,7 @@
                 </div>
             </div>
         
-            <!--About-->
+            About
             <div id="About" class="grey-container" >  
                 <h1 class="jumbotron" id="titles" >
                             
@@ -129,52 +193,12 @@
                     </div>
                 </div>
             </div>
-            <div onscroll="scrollevent()">
-                <p>
-                    TEST
-                </p>
-            </div>
+        -->
+           
 
-            <!--others-->
-            <div class="white-container" >    
-                <div class="container-fluid">
-                    <div id="titles">
-                        <h1 class="jumbotron" >
-                            
-                                About Me
-                            
-                        </h1>
-                    </div>
-                    <div class="container-fluid" id="contents">
-                        <p>Example sentence</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grey-container" >    
-                <div class="container-fluid">
-                    <a name="Work">
-                        <h1 class="jumbotron">
-                            
-                                WorkExperience
-                            
-                        </h1>
-                    </a>
-                    <div class="container-fluid" id="contents">
-                        <p>Example sentence</p>
-                    </div>
-                </div>
-            </div>
-            <div class="white-container" >    
-                <div class="container-fluid">
-                    
-                        <h1 class="jumbotron">
-                            
-                                WorkExperience
-                            
-                        </h1>
-                    <p>Example sentence</p>
-                </div>
-            </div>
+            
+            
+            
         </div>
 
         <!--right side-->
