@@ -1,10 +1,20 @@
-document.body.addEventListener("scroll", scrollevent());
-
 function scrollevent(){
-    if (document.body.scollTop > 50||document.documentElement.scrollTop>50){
-        document.getElementById("centered").padding = "0 0 0 0";
+    if (document.documentElement.scrollTop>500 || document.body.scrollTop>500){
+        document.getElementById("titles").style.transform = "scaleY(1)";
     }
-    document.getElementById("centered").style.padding = "0 0 0 0";
-    confirm("triall");
-
+    if (document.documentElement.scrollTop>100 || document.body.scrollTop>100){
+        document.getElementById("topNavBar").style.padding = "0 0 0 0";
+        document.getElementById("logoName").style.fontSize="300%";
+        document.getElementById("logo").style.fontSize="150%";
+        
+        }else {
+        document.getElementById("topNavBar").style.padding = "250px 100px 250px 100px";
+        document.getElementById("logoName").style.fontSize="750%";
+        document.getElementById("logo").style.fontSize="200%";
+        
+        // confirm("");
+    }
+    
+    
+   
 }
