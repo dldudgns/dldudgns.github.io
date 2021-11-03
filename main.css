@@ -1,5 +1,5 @@
 #topNavBar {
-   padding: 25% 10% 25% 10%;
+   padding: 20% 10% 25% 10%;
    transition:1s;
    
 }
@@ -44,43 +44,70 @@
     background: #000000;
     color:white;
     font-size:40px;
+    font-weight:bold;
     text-align: center;
-    padding: 10px 0px 10px 50px;
+    /* padding: 10px 0px 10px 50px; */
+    padding: 10px 0px 10px 10%;
     width: 600px;
     height: 75px;
-    transform: translate(-50px);
+    transform: translate(-200%);
+    transition:1.5s;
 }
 
 .logo-element{
     border-radius: 25px;
     border:5px solid black;
-    
     color:white;
-    font-size:40px;
     text-align: center;
-    padding: 0px 0px 0px 50px;
-    width: 800px;
+    padding: 0px 0px 0px 10%;
+    width: 725px;
     height: 100px;
-    transform: translate(-50px);
+    transform: translate(-200%);
+    transition:1.5s;
 }
 
 #uwaterlooLogo{
     display:block;
-    width:60%;
-    margin-left:15%;
+    width:75%;
+    margin-left:5%;
     padding-top:0%;
-    margin-top:-5%;
+    margin-top:-7%;
+}
+
+#onsemiLogo{
+    display:block;
+    width:75%;
+    margin-left:10%;
+    padding-top:0%;
+    margin-top:-7%;
+}
+
+#upchainLogo{
+    display:block;
+    width:75%;
+    margin-left:10%;
+    padding-top:0%;
+    margin-top:0.5%;
+}
+
+#cienaLogo{
+    display:block;
+    width:40%;
+    margin-left:25%;
+    padding-top:0%;
+    margin-top:0.5%;
 }
 
 .description-element{
     border-radius: 25px;
     background-color: black;
     color:white;
-    font-size:20px;
-    padding: 20px 0px 0px 75px;
-    width: 800px;
-    height: 75px;
-    transform: translate(-50px);
+    font-size:22px;
+    padding: 2% 0px 0px 70px;
+    width: 850px;
+    height: 60px;
+    transform: translate(-200%);
+    transition:1.5s;
 }
 
 
