@@ -1,56 +1,56 @@
 #topNavBar {
-   padding: 20% 10% 25% 10%;
+   padding: 45vh 12vw 45vh 12vw;
    transition:1s;
-   
+
 }
 
 #NavName{
-    font-size:750%;
+    font-size:18vmin;
     transition:1s;
 }
 
 #NavOptions {
-    font-size:200%;
+    font-size:3.2vmin;
     transition:1s;
 }
 
 
 .nav {
-    font-size:15px;
+    font-size:2vmin;
 }
 
 .navbar{
     /*padding:15px 10px 0px 10px;*/
 }
 
-.navbar-brand{
+/* .navbar-brand{
     font-size:40px;
-}
+} */
 
 .topBlankspace{
-    padding-top: 500px;
+    padding-top: 90vh;
 }
 
 .pageBlankspace{
-    padding-top:100px;
+    padding-top:10vh;
 }
 
 .blankspace{
-    padding-top:30px;
+    padding-top:3vh;
 }
 
 .title-element{
-    border-radius: 25px;
+    border-radius: 2.5vh;
     background: #000000;
     color:white;
-    font-size:40px;
+    font-size:8vh;
     font-weight:bold;
     text-align: center;
     /* padding: 10px 0px 10px 50px; */
     padding: 10px 0px 10px 10%;
     width: 600px;
     height: 75px;
-    transform: translate(-200%);
+    transform: translate(-80vw);
     transition:1.5s;
 }
 

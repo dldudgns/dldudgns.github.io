@@ -1,24 +1,27 @@
 function scrollevent(){
-    if(document.documentElement.scrollTop<90 || document.body.scrollTop<90){
+    // prompt(getScrollVal());
+    // if(getScrollVal()<90){// || document.body.scrollTop<90){
         //nav bar
-        if (document.documentElement.scrollTop>80 || document.body.scrollTop>80){
+        if ((getScrollVal())>10 || (getBodyScroll())>10){
             document.getElementById("topNavBar").style.padding = "0 0 0 0";
-            document.getElementById("NavName").style.fontSize="300%";
-            document.getElementById("NavOptions").style.fontSize="150%";
+            document.getElementById("NavName").style.fontSize="7.8vmin";
+            document.getElementById("NavOptions").style.fontSize="3vmin";
             
             }else {
-            document.getElementById("topNavBar").style.padding = "20% 10% 25% 10%";
-            document.getElementById("NavName").style.fontSize="750%";
-            document.getElementById("NavOptions").style.fontSize="200%";
+            document.getElementById("topNavBar").style.padding = "45vh 12vw 45vh 12vw";
+            document.getElementById("NavName").style.fontSize="18vmin";
+            document.getElementById("NavOptions").style.fontSize="3.2vmin";
         }
-    }else if (document.documentElement.scrollTop<270 || document.body.scrollTop<270){//Education in
-        elementIn(0,100,title);
-        elementIn(0,175,logo);
-        elementIn(0,250, description);
-    }else if (document.documentElement.scrollTop<720 || document.body.scrollTop<720){//Education out
-        elementOut(0,550,title);
-        elementOut(0,625,logo);
-        elementOut(0,700,description);
+    // }
+    if ((getScrollVal())<60 || (getBodyScroll())<60){// || document.body.scrollTop>80){//Education in
+        elementIn(0,15,"title");
+        elementIn(0,30,"logo");
+        elementIn(0,40, "description");
+    }
+    if ((getScrollVal())<150 || (getBodyScroll())<150){// || document.body.scrollTop>80){//Education out
+        elementOut(0,95,"title");
+        elementOut(0,110,"logo");
+        elementOut(0,120,"description");
     }
         
         
@@ -59,17 +62,25 @@ function scrollevent(){
 }
 
 function elementIn(which, where, what){
-    if(document.documentElement.scrollTop>where || document.body.scrollTop>where){
-        document.getElementsByClassName(`${what}-element`)[which].style.transform = "translate(-50px)";
+    if((getScrollVal())>where || (getBodyScroll())>where){// || document.body.scrollTop>80){
+        document.getElementsByClassName(`${what}-element`)[which].style.transform = "translate(-15vw)";
     }else{
-        document.getElementsByClassName(`${what}-element`)[which].style.transform = "translate(-200%)";
+        document.getElementsByClassName(`${what}-element`)[which].style.transform = "translate(-80vw)";
     }
 }
 
 function elementOut(which, where, what){
-    if(document.documentElement.scrollTop>where || document.body.scrollTop>where){
-        document.getElementsByClassName(`${what}-element`)[which].style.transform = "translate(-200%)";
+    if((getScrollVal())>where || (getBodyScroll())>where){// || document.body.scrollTop>80){
+        document.getElementsByClassName(`${what}-element`)[which].style.transform = "translate(-80vw)";
     }else{
-        document.getElementsByClassName(`${what}-element`)[which].style.transform = "translate(-50px)";
+        document.getElementsByClassName(`${what}-element`)[which].style.transform = "translate(-15vw)";
     }
+}
+
+function getScrollVal(){
+    return 100*(document.documentElement.scrollTop/document.documentElement.clientHeight);
+}
+
+function getBodyScroll(){
+    return 100*(document.body.scrollTop/document.body.clientHeight);
 }
