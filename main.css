@@ -1,17 +1,17 @@
 #topNavBar {
    padding: 45vh 12vw 45vh 12vw;
-   transition:1s;
-
+   transition:0.5s;
+   background-color: rgb(27, 27, 27);
 }
 
 #NavName{
     font-size:18vmin;
-    transition:1s;
+    transition:0.5s;
 }
 
 #NavOptions {
     font-size:3.2vmin;
-    transition:1s;
+    transition:0.5s;
 }
 
 
@@ -31,6 +31,10 @@
     padding-top: 90vh;
 }
 
+.betweenBlankspace{
+    padding-top: 60vh;
+}
+
 .pageBlankspace{
     padding-top:10vh;
 }
@@ -43,51 +47,66 @@
     border-radius: 2.5vh;
     background: #000000;
     color:white;
-    font-size:8vh;
+    font-size:6vh;
     font-weight:bold;
     text-align: center;
     /* padding: 10px 0px 10px 50px; */
-    padding: 10px 0px 10px 10%;
-    width: 600px;
-    height: 75px;
+    padding: 1vh 0vh 1vh 30vw;
+    width: 55vw;
+    height: 10vh;
     transform: translate(-80vw);
-    transition:1.5s;
+    transition:0.5s;
+}
+
+.subtitle-element{
+    border-radius: 2.5vh;
+    background: #000000;
+    color:white;
+    font-size:6vh;
+    /* font-weight:bold; */
+    text-align: center;
+    /* padding: 10px 0px 10px 50px; */
+    padding: 1vh 0vh 1vh 30vw;
+    width: 50vw;
+    height: 10vh;
+    transform: translate(-80vw);
+    transition:0.5s;
 }
 
 .logo-element{
-    border-radius: 25px;
-    border:5px solid black;
+    border-radius: 2.5vh;
+    border:.75vh solid black;
     color:white;
     text-align: center;
-    padding: 0px 0px 0px 10%;
-    width: 725px;
-    height: 100px;
-    transform: translate(-200%);
-    transition:1.5s;
+    padding: 0px 0px 0px 0vh;
+    width: 65vw;
+    height: 17.5vh;
+    transform: translate(-80vw);
+    transition:0.5s;
 }
 
 #uwaterlooLogo{
     display:block;
-    width:75%;
-    margin-left:5%;
+    width:25vw;
+    margin-left:40vw;
     padding-top:0%;
-    margin-top:-7%;
+    margin-top:-15vh;
 }
 
 #onsemiLogo{
     display:block;
-    width:75%;
-    margin-left:10%;
+    width:25vw;
+    margin-left:37vw;
     padding-top:0%;
-    margin-top:-7%;
+    margin-top:-15vh;
 }
 
 #upchainLogo{
     display:block;
-    width:75%;
-    margin-left:10%;
+    width:25vw;
+    margin-left:37vw;
     padding-top:0%;
-    margin-top:0.5%;
+    margin-top:-10vh;
 }
 
 #cienaLogo{
@@ -99,15 +118,15 @@
 }
 
 .description-element{
-    border-radius: 25px;
+    border-radius: 2.5vh;
     background-color: black;
     color:white;
-    font-size:22px;
-    padding: 2% 0px 0px 70px;
-    width: 850px;
-    height: 60px;
-    transform: translate(-200%);
-    transition:1.5s;
+    font-size:2.2vh;
+    padding: 2vh 0px 0px 20vw;
+    width: 60vw;
+    height: 7.5vh;
+    transform: translate(-80vw);
+    transition:0.5s;
 }
 
 
@@ -135,7 +154,7 @@
     background-color: whitesmoke;
     color:#646464;
     transform:scaleY(0);
-    transition:1s;
+    transition:0.5s;
 }
 
 
@@ -161,7 +180,7 @@ h3{
 }
 
 .right-panel{
-    background-color:#131313e1;
+    background-color:black;
     padding: 10% 0% 1000% 0%;
 }
 

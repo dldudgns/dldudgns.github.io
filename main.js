@@ -1,8 +1,8 @@
 function scrollevent(){
     // prompt(getScrollVal());
-    // if(getScrollVal()<90){// || document.body.scrollTop<90){
+    // if(getScrollVal()<10){// || document.body.scrollTop<90){
         //nav bar
-        if ((getScrollVal())>10 || (getBodyScroll())>10){
+        if ((getScrollVal())>8 || (getBodyScroll())>8){
             document.getElementById("topNavBar").style.padding = "0 0 0 0";
             document.getElementById("NavName").style.fontSize="7.8vmin";
             document.getElementById("NavOptions").style.fontSize="3vmin";
@@ -12,51 +12,43 @@ function scrollevent(){
             document.getElementById("NavName").style.fontSize="18vmin";
             document.getElementById("NavOptions").style.fontSize="3.2vmin";
         }
-    // }
-    if ((getScrollVal())<60 || (getBodyScroll())<60){// || document.body.scrollTop>80){//Education in
-        elementIn(0,15,"title");
-        elementIn(0,30,"logo");
-        elementIn(0,40, "description");
+    if ((getScrollVal())<50){// Education in
+        elementIn(0,10,"title");
+        elementIn(0,20,"logo");
+        elementIn(0,35, "description");
+        // confirm(getBodyScroll());
+    }else if ((getScrollVal())<150){// Education out
+        elementOut(0,95,"logo");
+        elementOut(0,100,"title");
+        elementOut(0,105,"description");
+    // Internships In
+        elementIn(1,110,"title");
+        elementIn(1,120,"logo");
+        elementIn(0,125,"subtitle");
+        elementIn(1,140,"description");
+    }else if ((getScrollVal())<265){
+        //Upchain In
+        elementIn(2,200,"logo");
+        elementIn(1,205,"subtitle");
+        elementIn(2,215,"description");
+        //Internship & ONSEMI out
+        elementOut(1,190,"title");
+        elementOut(1,210,"logo");
+        elementOut(0,215,"subtitle");
+        elementOut(1,230,"description");
+        //UWaterloo In
+        elementIn(3,240,"logo");
+        elementIn(2,245,"subtitle");
+        elementIn(3,255,"description");
+    }else if ((getScrollVal())<300){
+        //Upchain Out
+        elementOut(2,280,"logo");
+        elementOut(1,285,"subtitle");
+        elementOut(2,295,"description");
     }
-    if ((getScrollVal())<150 || (getBodyScroll())<150){// || document.body.scrollTop>80){//Education out
-        elementOut(0,95,"title");
-        elementOut(0,110,"logo");
-        elementOut(0,120,"description");
-    }
         
         
         
-        // if (document.documentElement.scrollTop>100 || document.body.scrollTop>100){
-        //     document.getElementsByClassName("title-element")[0].style.transform = "translate(-50px)";
-        //     if (document.documentElement.scrollTop>175 || document.body.scrollTop>175){
-        //         document.getElementsByClassName("logo-element")[0].style.transform = "translate(-50px)";
-        //         if(document.documentElement.scrollTop>250 || document.body.scrollTop>250){
-        //             document.getElementsByClassName("description-element")[0].style.transform = "translate(-50px)";
-        //         }else{
-        //             document.getElementsByClassName("description-element")[0].style.transform = "translate(-200%)";
-        //         }
-        //     }else {
-        //         document.getElementsByClassName("logo-element")[0].style.transform = "translate(-200%)";
-        //     }
-        // } else{
-        //     document.getElementsByClassName("title-element")[0].style.transform = "translate(-200%)";
-        // }
-        // //Education out
-        // if (document.documentElement.scrollTop>550 || document.body.scrollTop>550){
-        //     document.getElementsByClassName("title-element")[0].style.transform = "translate(-200%)";
-        //     if (document.documentElement.scrollTop>625 || document.body.scrollTop>625){
-        //         document.getElementsByClassName("logo-element")[0].style.transform = "translate(-200%)";
-        //         if(document.documentElement.scrollTop>700 || document.body.scrollTop>700){
-        //             document.getElementsByClassName("description-element")[0].style.transform = "translate(-200%)";
-        //         }else{
-        //             document.getElementsByClassName("description-element")[0].style.transform = "translate(-50px)";
-        //         }
-        //     }else {
-        //         document.getElementsByClassName("logo-element")[0].style.transform = "translate(-50px)";
-        //     }
-        // } else{
-        //     document.getElementsByClassName("title-element")[0].style.transform = "translate(-50px)";
-        // }
  
    
 }
