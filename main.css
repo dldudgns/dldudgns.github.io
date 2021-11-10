@@ -192,3 +192,11 @@ h3{
     padding-bottom:5%;
     margin-top:-35%;
 }
+
+#myCarousel{
+    padding:2vh;
+}
+
+.code_icons{
+    padding: 0vh 11vw 0vh 11vw;
+}
