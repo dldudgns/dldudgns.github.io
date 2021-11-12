@@ -14,18 +14,9 @@
     transition:0.5s;
 }
 
-
 .nav {
     font-size:2vmin;
 }
-
-.navbar{
-    /*padding:15px 10px 0px 10px;*/
-}
-
-/* .navbar-brand{
-    font-size:40px;
-} */
 
 .topBlankspace{
     padding-top: 90vh;
@@ -90,7 +81,7 @@
     width:25vw;
     margin-left:40vw;
     padding-top:0%;
-    margin-top:-15vh;
+    margin-top:-14vh;
 }
 
 #onsemiLogo{
@@ -198,5 +189,10 @@ h3{
 }
 
 .code_icons{
-    padding: 0vh 11vw 0vh 11vw;
+    padding: 0vh 10.5vw 0vh 10.5vw;
+    
+}
+
+.CAD_icons{
+    padding:5vh 3vw 0vh 3vw;
 }
