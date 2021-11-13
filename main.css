@@ -30,6 +30,10 @@
     padding-top:10vh;
 }
 
+.elementBlankspace{
+    padding-top:5vh;
+}
+
 .blankspace{
     padding-top:3vh;
 }
@@ -56,10 +60,10 @@
     font-size:6vh;
     /* font-weight:bold; */
     text-align: center;
-    /* padding: 10px 0px 10px 50px; */
-    padding: 1vh 0vh 1vh 30vw;
-    width: 50vw;
-    height: 10vh;
+    /* padding: 1vh 0px 1vh 20vw; */
+    padding: 0vh 0vh 1vh 30vw;
+    width: 45vw;
+    /* height:10vh; */height:8vh;
     transform: translate(-80vw);
     transition:0.5s;
 }
@@ -70,42 +74,42 @@
     color:white;
     text-align: center;
     padding: 0px 0px 0px 0vh;
-    width: 65vw;
-    height: 17.5vh;
+    /* width: 65vw; */width: 50vw;
+    /* height: 17.5vh; */ height: 15vh;
     transform: translate(-80vw);
     transition:0.5s;
 }
 
 #uwaterlooLogo{
     display:block;
-    width:25vw;
-    margin-left:40vw;
+    width:17vw;
+    margin-left:31.5vw;
     padding-top:0%;
-    margin-top:-14vh;
+    margin-top:-11vh;
 }
 
 #onsemiLogo{
     display:block;
-    width:25vw;
-    margin-left:37vw;
+    width:17vw;
+    margin-left:31.5vw;
     padding-top:0%;
-    margin-top:-15vh;
+    margin-top:-10.5vh;
 }
 
 #upchainLogo{
     display:block;
-    width:25vw;
-    margin-left:37vw;
+    /* width:25vw; */width:17vw;
+    /* margin-left:37vw; */margin-left:31.5vw;
     padding-top:0%;
-    margin-top:-10vh;
+    /* margin-top:-10vh; */margin-top:-7vh;
 }
 
 #cienaLogo{
     display:block;
-    width:17vw;
-    margin-left:40vw;
+    /* width:17vw; */width:12vw;
+    /* margin-left:40vw; */margin-left:34vw;
     padding-top:0%;
-    margin-top:-12vh;
+    /* margin-top:-12vh; */margin-top:-9vh;
 }
 
 .description-element{
