@@ -53,6 +53,30 @@
     transition:0.5s;
 }
 
+.name-element{
+    border-radius: 2.5vh;
+    background: #000000;
+    color:white;
+    font-size:8vh;
+    /* font-weight:bold; */
+    text-align: center;
+    /* padding: 1vh 0px 1vh 20vw; */
+    padding: 2vh 0vh 1vh 30vw;
+    width: 52vw;
+    /* height:10vh; */height:15vh;
+    /* transform: translate(-80vw); */transform: translate(-15vw);
+    transition:0.5s;
+}
+
+#portrait{
+    display: block;
+    width:9vw;
+    margin-left:38.7vw;
+    padding-top:0vh;
+    padding-bottom:0vh;
+    margin-top:-14vh;
+}
+
 .subtitle-element{
     border-radius: 2.5vh;
     background: #000000;
@@ -179,14 +203,7 @@ h3{
     padding: 10% 0% 1000% 0%;
 }
 
-#centered{
-    display: block;
-    width:30%;
-    margin-left:35%;
-    padding-top:30%;
-    padding-bottom:5%;
-    margin-top:-35%;
-}
+
 
 #myCarousel{
     padding:2vh;

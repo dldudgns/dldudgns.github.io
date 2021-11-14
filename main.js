@@ -12,12 +12,14 @@ function scrollevent(){
             document.getElementById("NavName").style.fontSize="18vmin";
             document.getElementById("NavOptions").style.fontSize="3.2vmin";
         }
-    if ((getScrollVal())<50){// Education in
+    if ((getScrollVal())<50){// About Me & Education in
+        elementIn(0,9,"title");
         elementIn(0,10,"subtitle");
         elementIn(0,20,"logo");
         elementIn(0,35, "description");
         // confirm(getBodyScroll());
-    }else if ((getScrollVal())<161){// Education out
+    }else if ((getScrollVal())<161){// About Me & Education out
+        elementOut(0,94,"title");
         elementOut(0,95,"logo");
         elementOut(0,100,"subtitle");
         elementOut(0,110,"description");
