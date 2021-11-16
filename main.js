@@ -1,6 +1,3 @@
-
-
-
 function scrollevent(){
     //nav bar
     if ((getScrollVal())>8 || (getBodyScroll())>8){
@@ -14,16 +11,16 @@ function scrollevent(){
         document.getElementById("NavOptions").style.fontSize="3.2vmin";
     }
 
-    if ((getScrollVal())<50){// About Me & Education in
+    if ((getScrollVal())<71){// About Me & Education in
         elementIn(0,9,"title");
-        elementIn(0,20,"name");
-        elementIn(0,22,"logo");
-        elementIn(0,25,"subtitle");
-        elementIn(1,28,"logo");
-        elementIn(0,35, "description");
+        elementIn(0,30,"name");
+        elementIn(0,32,"logo");
+        elementIn(0,55,"subtitle");
+        elementIn(1,57,"logo");
+        elementIn(0,70, "description");
         // confirm(getBodyScroll());
     }else if ((getScrollVal())<161){// About Me & Education out
-        elementOut(0,94,"title");
+        elementOut(0,110,"title");
         elementOut(0,94,"name");
         elementOut(0,98,"logo");
         elementOut(0,100,"subtitle");
