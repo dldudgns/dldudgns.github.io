@@ -38,14 +38,6 @@
     padding-top:3vh;
 }
 
-.smallBlankspace{
-    padding-top:1vh;
-}
-
-.horizBlankspace{
-    padding-left:10vw;
-}
-
 .title-element{
     border-radius: 2.5vh;
     background: #000000;
@@ -167,13 +159,13 @@
     border-radius: 2.5vh;
     background: #000000;
     color:white;
-    font-size:6vh;
-    font-weight:bold;
+    font-size:4vh;
+    /* font-weight:bold; */
     text-align: center;
     /* padding: 1vh 0px 1vh 20vw; */
-    padding: 5vh 0vh 1vh 30vw;
+    padding: 3vh 0vh 1vh 30vw;
     width: 50vw;
-    /* height:10vh; */height:18.5vh;
+    /* height:10vh; */height:13vh;
     /* transform: translate(-80vw); */
     transform: translate(-15vw);
     transition:0.5s;
@@ -193,16 +185,24 @@
     height:17vh;
     /* transform: translate(-80vw);*/transform: translate(-15vw);  
     transition:0.5s;
-    transform: translateY(-17.5vh);
+    transform: translateY(-15vh);
 }
 
 #unityPic{
 
 }
 
+.unityLogo{
+    width:7vw;
+}
+
+.CsharpLogo{
+    width:7vw;
+}
+
 .right-panel{
     background-color:black;
-    padding: 10% 0% 1000% 0%;
+    padding: 8vh 0% 1000% 0%;
 }
 
 #myCarousel{
@@ -210,10 +210,10 @@
 }
 
 .code_icons{
-    padding: 0vh 10.5vw 0vh 10.5vw;
+    padding: 0vh 10.5vw 0vh 10vw;
     
 }
 
 .CAD_icons{
-    padding:5vh 3vw 0vh 3vw;
+    padding: 2vh 3vw 0vh 4vw;
 }
