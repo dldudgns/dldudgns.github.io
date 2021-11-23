@@ -57,13 +57,13 @@
     border-radius: 2.5vh;
     background: #000000;
     color:white;
-    font-size:8vh;
-    font-weight:bold;
+    font-size:6vh;
+    /* font-weight:bold; */
     text-align: center;
     /* padding: 1vh 0px 1vh 20vw; */
     padding: 2vh 0vh 1vh 30vw;
     width: 52vw;
-    /* height:10vh; */height:15vh;
+    /* height:10vh; */height:13vh;
     /* transform: translate(-80vw); */
     transform: translate(-15vw);
     transition:0.5s;
